@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+</head>
+<body>
+    <!-- Criação de formulario para enviar os campos para uma Base de dados 
+     form name = "Nome do Formulario"  
+     method= "GET" não é utilizado para campos de senha  ou "POST" é mais seguro 
+     action= "caminho para onde os dados serão enviados" 
+     autocomplete "on" e "off" preencher os dados do formulario com os campos que já foram salvos 
+
+     onsubmit="alert('Formulario enviado com avisos');"
+     -->
+    <form name="cadastro" autocomplete="off" onsubmit="alert('Formulario enviado com avisos');" method="post" action="#">
+        <!-- Criamos os campos com Input setando seu tipo e o nome da sua variavel que ira armazenar os campos -->
+                <label for="name">Digite seu nome: </label>
+                     <input type="text" name="name" id="name" /><br>
+                <label for="age">Idade: </label>
+                     <input type="number" name="age" id="age"/><br>
+                <label for="password">Senha: </label>
+                      <input type="password" name="password" id="password"/><br>
+        <br>
+        <button type="submit">Enviar </button>
+
+
+    </form>
+    
+</body>
+</html>
