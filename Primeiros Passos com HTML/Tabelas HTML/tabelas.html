@@ -4,24 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas HTML</title>
-
+   
     <style>
-        table tr:nth-child(even){
+        table{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            border: solid 1px gray
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot tr{
+            background-color: antiquewhite;
+        }
+        table tbody tr:nth-child(even){
+            background-color: khaki;
+        }
+        table tbody tr:hover td{
+            background-color: lightpink;
+        }
+        
+
+    </style>    
+
+
+<!--
+    <style>
+       table tr:nth-child(even){
             background-color: rgb(87, 185, 185);
         }
         table tr:hover td {
             background-color: coral;
         }
     </style>
-
+-->
 </head>
 
 <body>
-        <table summary="Tabela de aprendizado" border="1" width="200" cellspacing="5" align="center" cellpadding="1">
+        <table summary="Tabela de aprendizado" width="200" cellspacing="0" align="center" cellpadding="3">
+
+            <caption> Tabela com Nome dos Usuarios e a Idade</caption>
+         <thead>
             <tr>
                 <th title="Nome Completo">Nome</th>                
                 <th>Idade:</th>
             </tr>
+        </thead>
+         <tbody>
             <tr id="1">
                 <td>Ricardo</td>
                 <td>32</td>
@@ -42,6 +72,25 @@
                 <td>Juliana</td>
                 <td>23</td>
             </tr>
+            <tr id="6">
+                <td>Geo</td>
+                <td>28</td>
+            </tr>
+            <tr id="7">
+                <td>Vitor</td>
+                <td>25</td>
+            </tr>
+            <tr id="8">
+                <td>Juliana</td>
+                <td>23</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+                <Td>Total</Td>
+                <Td>05</Td>
+            </tr>
+         </tfoot>
 
         </table>
 
