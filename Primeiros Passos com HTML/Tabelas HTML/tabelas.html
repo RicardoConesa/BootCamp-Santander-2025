@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pr-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas HTML</title>
+
+    <style>
+        table tr:nth-child(even){
+            background-color: rgb(87, 185, 185);
+        }
+        table tr:hover td {
+            background-color: coral;
+        }
+    </style>
+
 </head>
 
 <body>
-        <table summary="Tabela de aprendizado" border="1" width="200" cellspacing="10" align="center" cellpadding="5">
+        <table summary="Tabela de aprendizado" border="1" width="200" cellspacing="5" align="center" cellpadding="1">
             <tr>
-                <td>Nome:</td>                
-                <td>Idade:</td>
+                <th title="Nome Completo">Nome</th>                
+                <th>Idade:</th>
             </tr>
-            <tr>
+            <tr id="1">
                 <td>Ricardo</td>
                 <td>32</td>
             </tr>
-            <tr>
-                <td>Campo 01</td>
-                <td>Campo 02</td>
+            <tr id="2">
+                <td>Jow</td>
+                <td>20</td>
+            </tr>
+            <tr id="3">
+                <td>Geo</td>
+                <td>28</td>
+            </tr>
+            <tr id="4">
+                <td>Vitor</td>
+                <td>25</td>
+            </tr>
+            <tr id="5">
+                <td>Juliana</td>
+                <td>23</td>
             </tr>
 
         </table>
