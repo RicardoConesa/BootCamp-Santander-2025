@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto: A Jornada Ninja - Tudo Anime</title>
+    <style>
+        /* Estilos básicos para a página (mantidos do original) */
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Estilo do menu lateral esquerdo */
+        .left-nav {
+            width: 200px;
+            background-color: #2a2a2a;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+        }
+
+        .left-nav h3 {
+            color: #FF8C00;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .left-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-nav li {
+            margin-bottom: 10px;
+        }
+
+        .left-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .left-nav a:hover {
+            background-color: #444;
+        }
+
+        /* Estilo do conteúdo principal (central) */
+        .content-area {
+            flex-grow: 1;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        header .logo {
+            margin-right: 20px;
+        }
+
+        header .logo img {
+            height: 150px;
+        }
+
+        header .header-text h1 {
+            color: #FF8C00;
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        /* Estilo da linha divisória */
+        hr {
+            border: none;
+            border-top: 1px solid #FF8C00;
+            margin: 20px auto;
+            width: 95%;
+        }
+
+        /* Estilo das seções de conteúdo */
+        section {
+            padding: 30px 0;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: #FFA500;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        section h3 {
+            color: #FFD700;
+            font-size: 1.6em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        section ul {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Estilo das imagens dentro das seções */
+        .content-image {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: 20px auto;
+            border: 2px solid #FF8C00;
+            border-radius: 8px;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #2a2a2a;
+            color: #999999;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: auto;
+        }
+
+        /* Estilo do menu de artigos à direita */
+        .right-menu {
+            width: 220px;
+            background-color: #2a2a2a;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            height: fit-content;
+            align-self: flex-start;
+        }
+
+        .right-menu h3 {
+            color: #FF8C00;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .right-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .right-menu li {
+            margin-bottom: 10px;
+        }
+
+        .right-menu a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1em;
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .right-menu a:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <nav class="left-nav">
+            <h3>Animes Famosos</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dragonballz.html">Dragon Ball Z</a></li>
+                <li><a href="onepiece.html">One Piece</a></li>
+                <li><a href="naruto.html" style="background-color:#444;">Naruto</a></li>
+               
+            </ul>
+        </nav>
+
+        <div class="content-area">
+            <header>
+                <div class="logo">
+                    <img src="C:\RicardoDoc\BootCamp-Santander-2025\Primeiros Passos com HTML\Projeto TudoAnime\img\logo.png" alt="Logo Tudo Anime">
+                </div>
+                <div class="header-text">
+                    <h1>Naruto: A Jornada de um Ninja Inabalável!</h1>
+                </div>
+            </header>
+
+            <hr>
+
+            <main style="flex-grow: 1;">
+                <section id="historia-geral">
+                    <h2>A Fascinante História de Naruto</h2>
+                    <picture>
+                        <source srcset="https://i.imgur.com/kS5x8A5.webp" type="image/webp">
+                        <img src="https://i.imgur.com/kS5x8A5.jpeg" alt="Naruto Uzumaki Jovem" class="content-image">
+                    </picture>
+                    <p>
+                        **Naruto** é uma série de mangá japonesa escrita e ilustrada por **Masashi Kishimoto**. Ela narra a história de **Naruto Uzumaki**, um jovem ninja órfão que sonha em se tornar o Hokage, o líder de sua aldeia, e ganhar o respeito de todos. Rejeitado por carregar o demônio da Raposa de Nove Caudas selado dentro de si, Naruto embarca em uma jornada de auto-descoberta e treinamento para provar seu valor.
+                    </p>
+                    <p>
+                        A série é dividida em duas partes principais:
+                        <ul>
+                            <li><strong>Naruto (Clássico):</strong> Acompanha a infância e adolescência de Naruto, seu treinamento como genin com a Equipe 7 (Sasuke e Sakura) sob o comando de Kakashi, e suas primeiras missões e desafios.</li>
+                            <li><strong>Naruto Shippuden:</strong> A segunda parte da série, que se passa dois anos e meio após a primeira. Naruto retorna mais forte e enfrenta ameaças maiores, como a organização criminosa Akatsuki e a Quarta Grande Guerra Ninja, enquanto busca resgatar seu amigo Sasuke.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Naruto é aclamado por seus personagens bem desenvolvidos, sequências de ação dinâmicas, temas de amizade, perseverança e superação. A influência do anime é vasta, impactando a cultura pop global e inspirando uma geração de fãs e artistas.
+                    </p>
+                </section>
+
+                <section id="sagas-naruto">
+                    <h2>As Sagas Mais Emocionantes de Naruto</h2>
+                    <p>A jornada de Naruto é pontuada por arcos narrativos intensos que moldaram seu destino e o mundo ninja:</p>
+
+                    <section id="saga-ondas">
+                        <h3>Saga do País das Ondas</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/L7E9n2m.webp" type="image/webp">
+                            <img src="https://i.imgur.com/L7E9n2m.jpeg" alt="Equipe 7 contra Zabuza e Haku" class="content-image">
+                        </picture>
+                        <p>
+                            A primeira grande missão da Equipe 7. Eles devem proteger um construtor de pontes e acabam enfrentando os temíveis ninjas renegados Zabuza Momochi e Haku. Esta saga é crucial para o desenvolvimento dos laços da equipe e para Naruto descobrir o valor da amizade e da luta por seus companheiros.
+                        </p>
+                    </section>
+
+                    <section id="saga-chunin">
+                        <h3>Saga Exames Chūnin</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/C2K2u63.webp" type="image/webp">
+                            <img src="https://i.imgur.com/C2K2u63.jpeg" alt="Naruto no Exame Chūnin" class="content-image">
+                        </picture>
+                        <p>
+                            Os genins de Konoha (e de outras aldeias) participam de um exame rigoroso para se tornarem chūnin. A saga é cheia de batalhas estratégicas e introduz o vilão Orochimaru, que deixa uma marca em Sasuke. É um arco fundamental para mostrar o crescimento dos personagens.
+                        </p>
+                    </section>
+
+                    <section id="saga-resgate-sasuke">
+                        <h3>Saga de Resgate de Sasuke</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/V7YqR9W.webp" type="image/webp">
+                            <img src="https://i.imgur.com/V7YqR9W.jpeg" alt="Naruto e Sasuke no Vale do Fim" class="content-image">
+                        </picture>
+                        <p>
+                            Sasuke decide abandonar Konoha em busca de mais poder com Orochimaru. Naruto e uma equipe de ninjas leais o perseguem, resultando em combates emocionantes e a icônica batalha entre Naruto e Sasuke no Vale do Fim. Esta saga marca um ponto de virada na relação dos dois.
+                        </p>
+                    </section>
+
+                    <section id="saga-pain">
+                        <h3>Saga do Pain</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/o2K8h21.webp" type="image/webp">
+                            <img src="https://i.imgur.com/o2K8h21.jpeg" alt="Naruto no Modo Sábio contra Pain" class="content-image">
+                        </picture>
+                        <p>
+                            Pain, o líder da Akatsuki, ataca Konoha, destruindo a aldeia e levando à épica batalha entre ele e Naruto. Nesta saga, Naruto domina o Modo Sábio e se torna o herói da aldeia, ganhando o respeito que sempre buscou.
+                        </p>
+                    </section>
+
+                    <section id="saga-guerra-ninja">
+                        <h3>Saga da Quarta Grande Guerra Ninja</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/9w0B9Jj.webp" type="image/webp">
+                            <img src="https://i.imgur.com/9w0B9Jj.jpeg" alt="Aliança Shinobi na Quarta Grande Guerra Ninja" class="content-image">
+                        </picture>
+                        <p>
+                            A maior guerra do mundo ninja, onde a Aliança Shinobi enfrenta as forças combinadas de Obito, Kabuto e, posteriormente, Madara Uchiha e Kaguya Otsutsuki. Naruto, Sasuke e Sakura unem forças para proteger o mundo, culminando no fim da era das guerras.
+                        </p>
+                    </section>
+                </section>
+
+                <section id="dados-historicos">
+                    <h2>Dados Históricos e Impacto Cultural</h2>
+                    <picture>
+                        <source srcset="https://i.imgur.com/o1bZ1hC.webp" type="image/webp">
+                        <img src="https://i.imgur.com/o1bZ1hC.jpeg" alt="Mangás de Naruto" class="content-image">
+                    </picture>
+                    <h3>Mangá:</h3>
+                    <p>
+                        O mangá de Naruto foi serializado na **Weekly Shōnen Jump** de 1999 a 2014, totalizando 72 volumes tankōbon. É um dos mangás mais vendidos da história, com mais de 250 milhões de cópias em circulação mundialmente.
+                    </p>
+                    <h3>Anime:</h3>
+                    <ul>
+                        <li><strong>Naruto:</strong> 220 episódios (2002-2007)</li>
+                        <li><strong>Naruto Shippuden:</strong> 500 episódios (2007-2017)</li>
+                        <li><strong>Boruto: Naruto Next Generations:</strong> Continuação da história (2017-presente)</li>
+                    </ul>
+                    <p>
+                        Naruto transcendeu o universo dos mangás e animes, tornando-se um ícone global da cultura pop. Sua influência é vasta, inspirando jogos, filmes, Light Novels e uma enorme base de fãs ao redor do mundo. Os temas de perseverança, amizade e a busca por reconhecimento ressoam com milhões de pessoas.
+                    </p>
+                </section>
+
+                <section id="personagens">
+                    <h2>Personagens Icônicos de Naruto</h2>
+                    <picture>
+                        <source srcset="https://i.imgur.com/kS5x8A5.webp" type="image/webp">
+                        <img src="https://i.imgur.com/kS5x8A5.jpeg" alt="Naruto Uzumaki" class="content-image">
+                    </picture>
+                    <p>Conheça os ninjas que marcaram a história de Naruto:</p>
+
+                    <h3>Naruto Uzumaki</h3>
+                    <p>
+                        O protagonista, um ninja barulhento e hiperativo que sonha em se tornar o Hokage. Possui a Raposa de Nove Caudas selada dentro de si e usa o Rasengan e o Modo Sábio em suas lutas.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/tU7xR2c.webp" type="image/webp">
+                        <img src="https://i.imgur.com/tU7xR2c.jpeg" alt="Sasuke Uchiha" class="content-image">
+                    </picture>
+                    <h3>Sasuke Uchiha</h3>
+                    <p>
+                        O último membro sobrevivente do clã Uchiha, com um talento inato para o ninjutsu e o Sharingan. É rival e melhor amigo de Naruto, com um caminho sombrio em busca de vingança.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/j4u0w2k.webp" type="image/webp">
+                        <img src="https://i.imgur.com/j4u0w2k.jpeg" alt="Sakura Haruno" class="content-image">
+                    </picture>
+                    <h3>Sakura Haruno</h3>
+                    <p>
+                        A kunoichi da Equipe 7, conhecida por sua inteligência, controle de chakra e força física impressionante. É uma ninja médica e aluna da lendária Tsunade.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/qM6X2Lz.webp" type="image/webp">
+                        <img src="https://i.imgur.com/qM6X2Lz.jpeg" alt="Kakashi Hatake" class="content-image">
+                    </picture>
+                    <h3>Kakashi Hatake</h3>
+                    <p>
+                        O líder da Equipe 7 e um dos ninjas mais habilidosos de Konoha, conhecido como "O Ninja Copiador" devido ao seu Sharingan. Mentor de Naruto, Sasuke e Sakura.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/Xz0T3eT.webp" type="image/webp">
+                        <img src="https://i.imgur.com/Xz0T3eT.jpeg" alt="Itachi Uchiha" class="content-image">
+                    </picture>
+                    <h3>Itachi Uchiha</h3>
+                    <p>
+                        Irmão mais velho de Sasuke e um prodígio do clã Uchiha. Um personagem complexo cuja verdadeira história e sacrifícios são revelados ao longo da série, impactando profundamente Sasuke.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/0uB8G9q.webp" type="image/webp">
+                        <img src="https://i.imgur.com/0uB8G9q.jpeg" alt="Jiraiya" class="content-image">
+                    </picture>
+                    <h3>Jiraiya</h3>
+                    <p>
+                        Um dos Lendários Sannin de Konoha e o padrinho de Naruto. É um mestre em ninjutsu e espionagem, e um dos mentores mais importantes na vida de Naruto.
+                    </p>
+                </section>
+            </main>
+
+            <footer>
+                <p>Ricardo Conesa Silva - Projeto Curso BootCamp Santander 2025</p>
+            </footer>
+        </div>
+
+        <nav class="right-menu">
+            <h3>Navegação Rápida</h3>
+            <ul>
+                <li><a href="#historia-geral">A História de Naruto</a></li>
+                <li><a href="#sagas-naruto">Sagas Emocionantes</a></li>
+                <ul>
+                    <li><a href="#saga-ondas">Saga do País das Ondas</a></li>
+                    <li><a href="#saga-chunin">Saga Exames Chūnin</a></li>
+                    <li><a href="#saga-resgate-sasuke">Saga de Resgate de Sasuke</a></li>
+                    <li><a href="#saga-pain">Saga do Pain</a></li>
+                    <li><a href="#saga-guerra-ninja">Saga da Quarta Grande Guerra Ninja</a></li>
+                </ul>
+                <li><a href="#dados-historicos">Dados Históricos e Impacto</a></li>
+                <li><a href="#personagens">Personagens Icônicos</a></li>
+            </ul>
+        </nav>
+
+    </div> </body>
+</html>

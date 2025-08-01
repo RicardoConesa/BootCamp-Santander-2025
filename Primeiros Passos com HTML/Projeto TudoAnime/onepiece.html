@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece: A Grande Aventura - Tudo Anime</title>
+    <style>
+        /* Estilos básicos para a página (mantidos do original) */
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Estilo do menu lateral esquerdo */
+        .left-nav {
+            width: 200px;
+            background-color: #2a2a2a;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+        }
+
+        .left-nav h3 {
+            color: #FF8C00;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .left-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-nav li {
+            margin-bottom: 10px;
+        }
+
+        .left-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .left-nav a:hover {
+            background-color: #444;
+        }
+
+        /* Estilo do conteúdo principal (central) */
+        .content-area {
+            flex-grow: 1;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        header .logo {
+            margin-right: 20px;
+        }
+
+        header .logo img {
+            height: 150px;
+        }
+
+        header .header-text h1 {
+            color: #FF8C00;
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        /* Estilo da linha divisória */
+        hr {
+            border: none;
+            border-top: 1px solid #FF8C00;
+            margin: 20px auto;
+            width: 95%;
+        }
+
+        /* Estilo das seções de conteúdo */
+        section {
+            padding: 30px 0;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: #FFA500;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        section h3 {
+            color: #FFD700;
+            font-size: 1.6em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        section ul {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Estilo das imagens dentro das seções */
+        .content-image {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: 20px auto;
+            border: 2px solid #FF8C00;
+            border-radius: 8px;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #2a2a2a;
+            color: #999999;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: auto;
+        }
+
+        /* Estilo do menu de artigos à direita */
+        .right-menu {
+            width: 220px;
+            background-color: #2a2a2a;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            height: fit-content;
+            align-self: flex-start;
+        }
+
+        .right-menu h3 {
+            color: #FF8C00;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .right-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .right-menu li {
+            margin-bottom: 10px;
+        }
+
+        .right-menu a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1em;
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .right-menu a:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <nav class="left-nav">
+            <h3>Animes Famosos</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dragonballz.html">Dragon Ball Z</a></li>
+                <li><a href="onepiece.html" style="background-color:#444;">One Piece</a></li>
+                <li><a href="naruto.html">Naruto</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="content-area">
+            <header>
+                <div class="logo">
+                    <img src="C:\RicardoDoc\BootCamp-Santander-2025\Primeiros Passos com HTML\Projeto TudoAnime\img\logo.png" alt="Logo Tudo Anime">
+                </div>
+                <div class="header-text">
+                    <h1>One Piece: A Grande Aventura em Busca do Tesouro!</h1>
+                </div>
+            </header>
+
+            <hr>
+
+            <main style="flex-grow: 1;">
+                <section id="historia-geral">
+                    <h2>A Lenda e a Aventura de One Piece</h2>
+                    <picture>
+                        <source srcset="https://i.imgur.com/vHq4X2F.webp" type="image/webp">
+                        <img src="https://i.imgur.com/vHq4X2F.jpeg" alt="Monkey D. Luffy e Chapéu de Palha" class="content-image">
+                    </picture>
+                    <p>
+                        **One Piece** é uma série de mangá criada por **Eiichiro Oda**, que começou a ser serializada em 1997 e adaptada para anime em 1999. É a série de mangá mais vendida de todos os tempos e uma das franquias de mídia mais lucrativas da história. A trama segue as aventuras de **Monkey D. Luffy**, um garoto cujo corpo se tornou de borracha após ele comer acidentalmente uma Fruta do Diabo. Com sua tripulação, os **Piratas do Chapéu de Palha**, Luffy navega pela Grand Line em busca do tesouro supremo conhecido como **One Piece**, com o objetivo de se tornar o próximo Rei dos Piratas.
+                    </p>
+                    <p>
+                        A história é conhecida por seu vasto mundo, personagens carismáticos, batalhas épicas, temas de amizade, liberdade e a exploração de questões sociais e políticas complexas. Oda construiu um universo rico em detalhes, mistérios e profecias, cativando milhões de fãs ao redor do globo por décadas.
+                    </p>
+                </section>
+
+                <section id="sagas-onepiece">
+                    <h2>As Sagas Marcantes de One Piece</h2>
+                    <p>A jornada dos Piratas do Chapéu de Palha é dividida em arcos narrativos extensos e cheios de reviravoltas:</p>
+
+                    <section id="saga-eastblue">
+                        <h3>Saga East Blue</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/Z4c9rD3.webp" type="image/webp">
+                            <img src="https://i.imgur.com/Z4c9rD3.jpeg" alt="Tripulação do Chapéu de Palha no East Blue" class="content-image">
+                        </picture>
+                        <p>
+                            Onde tudo começa! Luffy reúne os primeiros membros de sua tripulação: Zoro, Nami, Usopp e Sanji. Eles enfrentam piratas locais e marinheiros, estabelecendo seus sonhos individuais e a base para a futura grandiosidade do bando. Esta saga culmina na entrada na Grand Line.
+                        </p>
+                    </section>
+
+                    <section id="saga-alabasta">
+                        <h3>Saga Alabasta</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/D8s1oHq.webp" type="image/webp">
+                            <img src="https://i.imgur.com/D8s1oHq.jpeg" alt="Luffy e Crocodile em Alabasta" class="content-image">
+                        </picture>
+                        <p>
+                            Os Chapéus de Palha tentam deter uma guerra civil no reino desértico de Alabasta, orquestrada pelo Shichibukai Crocodile e sua organização Baroque Works. Esta saga aprofunda o conceito das Frutas do Diabo e introduz Robin como nova tripulante.
+                        </p>
+                    </section>
+
+                    <section id="saga-enieslobby">
+                        <h3>Saga Enies Lobby</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/R3xM3oH.webp" type="image/webp">
+                            <img src="https://i.imgur.com/R3xM3oH.jpeg" alt="Luffy contra Lucci em Enies Lobby" class="content-image">
+                        </picture>
+                        <p>
+                            Em uma das sagas mais aclamadas, a tripulação invade a fortaleza do governo mundial, Enies Lobby, para resgatar Robin, que busca a morte para proteger seus amigos. A saga é repleta de momentos icônicos, como a queima do Going Merry e a declaração de guerra ao Governo Mundial.
+                        </p>
+                    </section>
+
+                    <section id="saga-marineford">
+                        <h3>Saga Marineford</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/J8t4N6b.webp" type="image/webp">
+                            <img src="https://i.imgur.com/J8t4N6b.jpeg" alt="Guerra de Marineford" class="content-image">
+                        </picture>
+                        <p>
+                            A maior guerra da série até então, onde Luffy tenta resgatar seu irmão Ace da execução pelas mãos da Marinha e dos Sete Lordes do Mar. Esta saga épica envolve as maiores potências do mundo de One Piece e tem consequências devastadoras.
+                        </p>
+                    </section>
+
+                    <section id="saga-wano">
+                        <h3>Saga Wano Country</h3>
+                        <picture>
+                            <source srcset="https://i.imgur.com/sS4dC9N.webp" type="image/webp">
+                            <img src="https://i.imgur.com/sS4dC9N.jpeg" alt="Luffy em Wano" class="content-image">
+                        </picture>
+                        <p>
+                            Uma das sagas mais longas e grandiosas, ambientada no país isolado de Wano, inspirado no Japão Feudal. Luffy e seus aliados buscam libertar Wano do controle do Yonko Kaido e do Shogun Orochi, culminando em batalhas colossais e revelações importantes.
+                        </p>
+                    </section>
+                </section>
+
+                <section id="dados-historicos">
+                    <h2>Dados Históricos e Impacto Cultural</h2>
+                    <picture>
+                        <source srcset="https://i.imgur.com/f9W9M5m.webp" type="image/webp">
+                        <img src="https://i.imgur.com/f9W9M5m.jpeg" alt="Mangás de One Piece" class="content-image">
+                    </picture>
+                    <h3>Mangá:</h3>
+                    <p>
+                        Serializado na **Weekly Shōnen Jump** desde 1997, One Piece já ultrapassou 1.000 capítulos e mais de 100 volumes tankōbon. É o mangá mais vendido da história, com mais de 500 milhões de cópias em circulação mundialmente, detendo o recorde mundial do Guinness por "maior número de cópias publicadas de uma mesma série de quadrinhos por um único autor".
+                    </p>
+                    <h3>Anime:</h3>
+                    <ul>
+                        <li><strong>One Piece:</strong> Mais de 1.100 episódios (1999-presente)</li>
+                    </ul>
+                    <p>
+                        A franquia One Piece inclui também filmes de sucesso, jogos de videogame, Light Novels, e uma adaptação live-action da Netflix que recebeu aclamação. Seu impacto cultural é imenso, influenciando uma geração de criadores e fãs, e se consolidando como um dos pilares da cultura pop japonesa no mundo.
+                    </p>
+                </section>
+
+                <section id="personagens">
+                    <h2>Personagens Icônicos de One Piece</h2>
+                    <picture>
+                        <source srcset="https://i.imgur.com/xV6N4vK.webp" type="image/webp">
+                        <img src="https://i.imgur.com/xV6N4vK.jpeg" alt="Monkey D. Luffy" class="content-image">
+                    </picture>
+                    <p>A tripulação dos Piratas do Chapéu de Palha e outros personagens inesquecíveis:</p>
+
+                    <h3>Monkey D. Luffy</h3>
+                    <p>
+                        O capitão dos Piratas do Chapéu de Palha, um usuário de Fruta do Diabo Gomu Gomu que sonha em se tornar o Rei dos Piratas. Sua determinação e sua capacidade de fazer amigos são lendárias.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/tC7gL5I.webp" type="image/webp">
+                        <img src="https://i.imgur.com/tC7gL5I.jpeg" alt="Roronoa Zoro" class="content-image">
+                    </picture>
+                    <h3>Roronoa Zoro</h3>
+                    <p>
+                        O espadachim do bando e um ex-caçador de piratas. Utiliza o estilo Santoryu (três espadas) e sonha em se tornar o maior espadachim do mundo. Sua lealdade a Luffy é inabalável.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/v8tT9oI.webp" type="image/webp">
+                        <img src="https://i.imgur.com/v8tT9oI.jpeg" alt="Nami" class="content-image">
+                    </picture>
+                    <h3>Nami</h3>
+                    <p>
+                        A navegadora e ladra dos Piratas do Chapéu de Palha, com um talento excepcional para prever o clima e desenhar mapas. Seu sonho é mapear o mundo inteiro.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/bL6tD5R.webp" type="image/webp">
+                        <img src="https://i.imgur.com/bL6tD5R.jpeg" alt="Vinsmoke Sanji" class="content-image">
+                    </picture>
+                    <h3>Vinsmoke Sanji</h3>
+                    <p>
+                        O cozinheiro dos Chapéus de Palha, conhecido por suas técnicas de chute e sua paixão por mulheres. Sonha em encontrar o All Blue, um mar lendário.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/nJ2rC3p.webp" type="image/webp">
+                        <img src="https://i.imgur.com/nJ2rC3p.jpeg" alt="Usopp" class="content-image">
+                    </picture>
+                    <h3>Usopp</h3>
+                    <p>
+                        O atirador e inventor da tripulação, mestre em contação de histórias e em "fugir". Apesar de medroso, ele se supera em momentos de necessidade, sonhando em se tornar um bravo guerreiro do mar.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/E5J0K8P.webp" type="image/webp">
+                        <img src="https://i.imgur.com/E5J0K8P.jpeg" alt="Nico Robin" class="content-image">
+                    </picture>
+                    <h3>Nico Robin</h3>
+                    <p>
+                        A arqueóloga dos Chapéus de Palha, capaz de brotar partes do corpo onde quiser graças à Fruta do Diabo Hana Hana no Mi. Ela busca desvendar a verdadeira história do mundo.
+                    </p>
+                    <picture>
+                        <source srcset="https://i.imgur.com/K5bN9fN.webp" type="image/webp">
+                        <img src="https://i.imgur.com/K5bN9fN.jpeg" alt="Chopper" class="content-image">
+                    </picture>
+                    <h3>Tony Tony Chopper</h3>
+                    <p>
+                        A rena médica do bando, que comeu a Fruta do Diabo Hito Hito no Mi, permitindo-lhe ter forma humana e inteligência. Seu sonho é se tornar um médico capaz de curar qualquer doença.
+                    </p>
+                </section>
+            </main>
+
+            <footer>
+                <p>Ricardo Conesa Silva - Projeto Curso BootCamp Santander 2025</p>
+            </footer>
+        </div>
+
+        <nav class="right-menu">
+            <h3>Navegação Rápida</h3>
+            <ul>
+                <li><a href="#historia-geral">A Lenda e a Aventura</a></li>
+                <li><a href="#sagas-onepiece">Sagas Marcantes</a></li>
+                <ul>
+                    <li><a href="#saga-eastblue">Saga East Blue</a></li>
+                    <li><a href="#saga-alabasta">Saga Alabasta</a></li>
+                    <li><a href="#saga-enieslobby">Saga Enies Lobby</a></li>
+                    <li><a href="#saga-marineford">Saga Marineford</a></li>
+                    <li><a href="#saga-wano">Saga Wano Country</a></li>
+                </ul>
+                <li><a href="#dados-historicos">Dados Históricos e Impacto</a></li>
+                <li><a href="#personagens">Personagens Icônicos</a></li>
+            </ul>
+        </nav>
+
+    </div> </body>
+</html>

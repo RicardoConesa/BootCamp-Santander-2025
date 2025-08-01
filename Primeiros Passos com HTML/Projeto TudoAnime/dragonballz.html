@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball: A História - Tudo Anime</title>
+    <style>
+        /* Estilos básicos para a página */
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remover margem padrão do body */
+        }
+
+        /* Contêiner principal para o layout flexbox */
+        .main-container {
+            display: flex;
+            min-height: 100vh; /* Garante que o contêiner ocupe a altura mínima da tela */
+        }
+
+        /* Estilo do menu lateral (mantido do original) */
+        .left-nav {
+            width: 200px;
+            background-color: #2a2a2a;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+        }
+
+        .left-nav h3 {
+            color: #FF8C00;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .left-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-nav li {
+            margin-bottom: 10px;
+        }
+
+        .left-nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .left-nav a:hover {
+            background-color: #444;
+        }
+
+        /* Estilo do conteúdo principal (à direita do menu esquerdo) */
+        .content-area {
+            flex-grow: 1; /* Ocupa o espaço restante */
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column; /* Conteúdo interno em coluna para rodapé fixo */
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        header .logo {
+            margin-right: 20px;
+        }
+
+        header .logo img {
+            height: 150px;
+        }
+
+        header .header-text h1 {
+            color: #FF8C00;
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        /* Estilo da linha divisória */
+        hr {
+            border: none;
+            border-top: 1px solid #FF8C00;
+            margin: 20px auto;
+            width: 95%;
+        }
+
+        /* Estilo das seções de conteúdo */
+        section {
+            padding: 30px 0;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: #FFA500;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        section h3 {
+            color: #FFD700; /* Cor um pouco diferente para sub-títulos */
+            font-size: 1.6em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        section ul {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            list-style-type: disc; /* Garante bolinhas para listas */
+            padding-left: 20px;
+        }
+
+        /* Estilo das imagens dentro das seções */
+        .content-image {
+            display: block; /* Para centralizar com margin: auto */
+            max-width: 80%; /* Garante que a imagem não transborde */
+            height: auto; /* Mantém a proporção */
+            margin: 20px auto; /* Centraliza a imagem e adiciona margem */
+            border: 2px solid #FF8C00; /* Borda para combinar com o tema */
+            border-radius: 8px; /* Cantos arredondados */
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #2a2a2a;
+            color: #999999;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: auto; /* Empurra o rodapé para baixo */
+        }
+
+        /* Menu de Artigos à direita */
+        .right-menu {
+            width: 220px; /* Largura do menu de artigos */
+            background-color: #2a2a2a;
+            padding: 20px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.5); /* Sombra para a esquerda */
+            flex-shrink: 0;
+            position: sticky; /* Menu fixo ao rolar */
+            top: 0; /* Fica no topo da tela */
+            height: fit-content; /* Ajusta a altura ao conteúdo */
+            align-self: flex-start; /* Impede que o menu estique em altura */
+        }
+
+        .right-menu h3 {
+            color: #FF8C00;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .right-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .right-menu li {
+            margin-bottom: 10px;
+        }
+
+        .right-menu a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1em;
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .right-menu a:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <nav class="left-nav">
+            <h3>Animes Famosos</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dragonball.html" style="background-color:#444;">Dragon Ball Z</a></li>
+                <li><a href="onepiece.html">One Piece</a></li>
+                <li><a href="naruto.html">Naruto</a></li>
+             
+            </ul>
+        </nav>
+
+        <div class="content-area">
+            <header>
+                <div class="logo">
+                    <img src="C:\RicardoDoc\BootCamp-Santander-2025\Primeiros Passos com HTML\Projeto TudoAnime\img\logo.png" alt="Logo Tudo Anime">
+                </div>
+                <div class="header-text">
+                    <h1>Dragon Ball: A Lenda Continua!</h1>
+                </div>
+            </header>
+
+            <hr>
+
+            <main style="flex-grow: 1;">
+                <section id="historia-geral">
+                    <h2>A Fascinante História de Dragon Ball</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/2/22/DB_Goku.png" alt="Goku Jovem e Esfera do Dragão" class="content-image">
+                    <p>
+                        **Dragon Ball** é uma das franquias de anime e mangá mais influentes e reconhecidas globalmente, criada por **Akira Toriyama**. A série começou sua serialização no mangá em 1984 e rapidamente se tornou um fenômeno, adaptada para anime em 1986. Inspirada vagamente no clássico romance chinês "Jornada ao Oeste", a obra segue as aventuras de **Son Goku** desde sua infância até a vida adulta, enquanto ele treina em artes marciais e explora o mundo em busca das sete Esferas do Dragão, que podem invocar um dragão místico capaz de conceder desejos.
+                    </p>
+                    <p>
+                        A saga é dividida em várias fases principais:
+                        <ul>
+                            <li><strong>Dragon Ball (Original):</strong> Focada na infância e adolescência de Goku, a descoberta das Esferas, e suas primeiras lutas e torneios de artes marciais.</li>
+                            <li><strong>Dragon Ball Z:</strong> A fase mais popular, introduzindo conceitos como alienígenas (Saiyajins), transformações e batalhas em escala cósmica contra vilões icônicos como Freeza, Cell e Majin Boo.</li>
+                            <li><strong>Dragon Ball GT:</strong> Uma continuação não-canônica do anime, explorando novas transformações e aventuras em outros planetas.</li>
+                            <li><strong>Dragon Ball Super:</strong> A continuação canônica que se passa após a saga de Majin Boo em Dragon Ball Z, explorando deuses da destruição, anjos e multiversos.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        A série é conhecida por seu humor característico, as emocionantes sequências de luta, o desenvolvimento constante de poder dos personagens e a exploração de temas como amizade, superação e a busca pela força.
+                    </p>
+                </section>
+
+                <section id="sagas-dbz">
+                    <h2>As Grandes Sagas de Dragon Ball Z</h2>
+                    <p>Dragon Ball Z é marcado por arcos narrativos intensos e memoráveis, cada um apresentando novos desafios e evoluções para os heróis:</p>
+
+                    <section id="saga-saiyajins">
+                        <h3>Saga dos Saiyajins</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/d/d7/Saga_Saiyajin.png" alt="Goku e Vegeta na Saga Saiyajins" class="content-image">
+                        <p>
+                            O início de DBZ revela a origem alienígena de Goku, com a chegada de seu irmão, **Raditz**. Após a morte de Goku, a Terra se prepara para a chegada iminente de dois Saiyajins ainda mais poderosos: **Vegeta** e **Nappa**. Esta saga estabelece o tom de batalhas épicas e introduz a ameaça Saiyajin ao universo.
+                        </p>
+                    </section>
+
+                    <section id="saga-freeza">
+                        <h3>Saga de Freeza</h3>
+                        <img src="https://static.wikia.nocookie.net/dragonball/images/3/30/Goku_Super_Saiyajin_Namekusei.png" alt="Goku Super Saiyajin contra Freeza" class="content-image">
+                        <p>
+                            A maior parte desta saga acontece no Planeta Namekusei, onde Goku e seus amigos buscam as Esferas do Dragão para reviver seus aliados caídos. Eles enfrentam o tirano galáctico **Freeza**, um dos vilões mais cruéis e emblemáticos da série, culminando na lendária transformação de Goku em **Super Saiyajin**.
+                        </p>
+                    </section>
+
+                    <section id="saga-cell">
+                        <h3>Saga de Cell</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/c/c2/Gohan_Super_Saiyajin_2.png" alt="Gohan Super Saiyajin 2 contra Cell" class="content-image">
+                        <p>
+                            Ambientada após o retorno de Freeza, esta saga introduz os perigosos **Androides** criados pelo Dr. Gero e, posteriormente, a criatura bio-mecânica **Cell**. Para deter Cell, os Guerreiros Z precisam treinar arduamente e Gohan alcança um novo nível de poder durante os Jogos de Cell.
+                        </p>
+                    </section>
+
+                    <section id="saga-boo">
+                        <h3>Saga de Majin Boo</h3>
+                        <img src="https://static.wikia.nocookie.net/dragonball/images/9/93/Goku_Super_Saiyajin_3.png" alt="Goku Super Saiyajin 3 contra Majin Boo" class="content-image">
+                        <p>
+                            A última grande saga de Dragon Ball Z traz uma ameaça mágica e imprevisível: **Majin Boo**. Esta saga é marcada por diversas transformações de Boo, a introdução das **fusões** (Metamoru e Potara) e o retorno do Super Saiyajin 3, com Goku e Vegeta sendo forçados a lutar juntos de maneiras inéditas para salvar o universo.
+                        </p>
+                    </section>
+                </section>
+
+                <section id="dados-historicos">
+                    <h2>Dados Históricos e Impacto Cultural</h2>
+                    <img src="https://static.wikia.nocookie.net/dragonball/images/8/87/Dragon_Ball_Super_anime_promo_scan.png" alt="Elenco de Dragon Ball Super" class="content-image">
+                    <h3>Mangá:</h3>
+                    <p>
+                        O mangá original de Dragon Ball foi serializado na revista semanal **Weekly Shōnen Jump** de 1984 a 1995. Totalizou 42 volumes tankōbon, vendendo mais de 260 milhões de cópias em todo o mundo, tornando-se uma das séries de mangá mais vendidas da história.
+                    </p>
+                    <h3>Anime:</h3>
+                    <ul>
+                        <li><strong>Dragon Ball:</strong> 153 episódios (1986-1989)</li>
+                        <li><strong>Dragon Ball Z:</strong> 291 episódios (1989-1996)</li>
+                        <li><strong>Dragon Ball GT:</strong> 64 episódios (1996-1997)</li>
+                        <li><strong>Dragon Ball Super:</strong> 131 episódios (2015-2018)</li>
+                    </ul>
+                    <p>
+                        Além das séries de TV, Dragon Ball gerou inúmeros filmes, OVAs (Original Video Animations), especiais de TV, jogos de videogame, figuras de ação e uma vasta gama de produtos licenciados. Sua influência é visível em diversos animes, mangás e mídias ocidentais, solidificando seu status como um marco na cultura pop global.
+                    </p>
+                </section>
+
+                <section id="personagens">
+                    <h2>Personagens Icônicos de Dragon Ball</h2>
+                    <img src="https://static.wikia.nocookie.net/dragonball/images/c/ce/Son_Goku_DBZ_Epis%C3%B3dio_1.png" alt="Son Goku" class="content-image">
+                    <p>A franquia é repleta de personagens memoráveis, cada um com sua personalidade e arco de desenvolvimento:</p>
+
+                    <h3>Son Goku</h3>
+                    <p>
+                        O protagonista principal, um Saiyajin com um coração puro e uma insaciável paixão por lutar e se tornar mais forte. Sua jornada é o cerne da série, desde um garoto ingênuo até o salvador do universo.
+                    </p>
+                    <img src="https://static.wikia.nocookie.net/dragonball/images/1/1e/Vegeta_DBZ_Epis%C3%B3dio_1.png" alt="Vegeta" class="content-image">
+                    <h3>Vegeta</h3>
+                    <p>
+                        O Príncipe dos Saiyajins, inicialmente um vilão orgulhoso e rival de Goku, que gradualmente se torna um anti-herói e, por fim, um protetor da Terra, embora sua rivalidade com Goku permaneça.
+                    </p>
+                    <img src="https://static.wikia.nocookie.net/dragonball/images/3/30/Gohan_DBZ_Epis%C3%B3dio_1.png" alt="Gohan" class="content-image">
+                    <h3>Gohan</h3>
+                    <p>
+                        Filho mais velho de Goku. Apesar de seu potencial latente ser imenso, Gohan prefere a vida acadêmica. No entanto, ele sempre se destaca em momentos cruciais de perigo.
+                    </p>
+                    <img src="https://static.wikia.nocookie.net/dragonball/images/b/b2/Piccolo_DBZ_Epis%C3%B3dio_1.png" alt="Piccolo" class="content-image">
+                    <h3>Piccolo</h3>
+                    <p>
+                        Um Namekuseijin e ex-inimigo de Goku, que se torna um dos seus maiores aliados e mentor de Gohan. Sua jornada de redenção é um dos pontos altos da série.
+                    </p>
+                    <img src="https://static.wikia.nocookie.net/dragonball/images/f/f6/Freeza_DBZ_Epis%C3%B3dio_1.png" alt="Freeza" class="content-image">
+                    <h3>Freeza</h3>
+                    <p>
+                        Um dos vilões mais icônicos e sádicos da história do anime, responsável pela destruição do Planeta Vegeta e pela primeira transformação de Goku em Super Saiyajin.
+                    </p>
+                    <img src="https://static.wikia.nocookie.net/dragonball/images/2/23/Bulma_DBZ_Epis%C3%B3dio_1.png" alt="Bulma" class="content-image">
+                    <h3>Bulma</h3>
+                    <p>
+                        A primeira amiga de Goku, uma cientista brilhante e excêntrica que o acompanha em muitas de suas aventuras. Ela é crucial para o desenvolvimento de várias tecnologias na série.
+                    </p>
+                    <img src="https://static.wikia.nocookie.net/dragonball/images/3/3c/Trunks_DBZ_Epis%C3%B3dio_1.png" alt="Trunks do Futuro" class="content-image">
+                    <h3>Trunks</h3>
+                    <p>
+                        Filho de Vegeta e Bulma. Existem duas versões notáveis: o Trunks do Futuro, um guerreiro sombrio e determinado, e o Trunks do presente, um garoto mais brincalhão e arrogante.
+                    </p>
+                </section>
+            </main>
+
+            <footer>
+                <p>Ricardo Conesa Silva - Projeto Curso BootCamp Santander 2025</p>
+            </footer>
+        </div>
+
+        <nav class="right-menu">
+            <h3>Navegação Rápida</h3>
+            <ul>
+                <li><a href="#historia-geral">A História de Dragon Ball</a></li>
+                <li><a href="#sagas-dbz">Sagas de DBZ</a></li>
+                <ul>
+                    <li><a href="#saga-saiyajins">Saga dos Saiyajins</a></li>
+                    <li><a href="#saga-freeza">Saga de Freeza</a></li>
+                    <li><a href="#saga-cell">Saga de Cell</a></li>
+                    <li><a href="#saga-boo">Saga de Majin Boo</a></li>
+                </ul>
+                <li><a href="#dados-historicos">Dados Históricos e Impacto</a></li>
+                <li><a href="#personagens">Personagens Icônicos</a></li>
+            </ul>
+        </nav>
+
+    </div> </body>
+</html>
