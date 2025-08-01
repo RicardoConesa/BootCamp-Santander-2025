@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo as Tags HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #0056b3;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        code {
+            background-color: #e9e9e9;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+        .exemplo {
+            background-color: #eaf7ff;
+            border-left: 5px solid #007bff;
+            padding: 10px 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+        .exemplo p {
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 30px 0;
+        }
+        blockquote {
+            background-color: #f0f0f0;
+            border-left: 5px solid #ccc;
+            margin: 1.5em 10px;
+            padding: 0.5em 10px;
+            font-style: italic;
+        }
+        sub, sup {
+            vertical-align: baseline;
+            position: relative;
+            font-size: 0.8em;
+        }
+        sub {
+            bottom: -0.25em;
+        }
+        sup {
+            top: -0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Desvendando as Tags HTML: Um Guia para Iniciantes</h1>
+        <p>Olá! Se você chegou aqui, provavelmente está começando a entender como a internet funciona por trás das telas. Uma página da web é feita com um "esqueleto" chamado HTML, e esse esqueleto é construído com algo que chamamos de <strong>tags</strong>.</p>
+        <p>Imagine que as tags são como blocos de montar ou etiquetas que dizem ao navegador (como Chrome, Firefox) o que cada parte do seu texto ou imagem significa e como ela deve aparecer. A maioria das tags vêm em pares: uma para "abrir" e outra para "fechar". Por exemplo, <code>&lt;tag&gt;</code> abre e <code>&lt;/tag&gt;</code> fecha.</p>
+
+        ---
+
+        <h2>Tags de Títulos: &lt;h1&gt; a &lt;h6&gt;</h2>
+        <p>Essas tags são usadas para criar títulos e subtítulos. Pense nelas como os títulos de capítulos de um livro, onde <code>&lt;h1&gt;</code> é o título principal e <code>&lt;h6&gt;</code> é o menos importante. Os navegadores exibem o <code>&lt;h1&gt;</code> como o maior e o <code>&lt;h6&gt;</code> como o menor.</p>
+        <pre><code>
+&lt;h1&gt;Este é o Título Mais Importante&lt;/h1&gt;
+&lt;h2&gt;Este é um Subtítulo de Nível 2&lt;/h2&gt;
+&lt;h3&gt;Subtítulo de Nível 3&lt;/h3&gt;
+&lt;h4&gt;Subtítulo de Nível 4&lt;/h4&gt;
+&lt;h5&gt;Subtítulo de Nível 5&lt;/h5&gt;
+&lt;h6&gt;Este é o Menor Título&lt;/h6&gt;
+        </code></pre>
+        <div class="exemplo">
+            <h3>Exemplo:</h3>
+            <h1>Este é o Título Mais Importante</h1>
+            <h2>Este é um Subtítulo de Nível 2</h2>
+            <h3>Subtítulo de Nível 3</h3>
+            <h4>Subtítulo de Nível 4</h4>
+            <h5>Subtítulo de Nível 5</h5>
+            <h6>Este é o Menor Título</h6>
+        </div>
+
+        ---
+
+        <h2>Parágrafo: &lt;p&gt;</h2>
+        <p>A tag <code>&lt;p&gt;</code> é a mais comum para texto simples. Ela serve para criar um novo parágrafo de texto, separando-o visualmente do conteúdo anterior e posterior.</p>
+        <pre><code>
+&lt;p&gt;Este é o primeiro parágrafo de texto na minha página HTML. É onde colocamos o conteúdo principal.&lt;/p&gt;
+&lt;p&gt;E este é o segundo parágrafo. Cada parágrafo fica em uma linha separada.&lt;/p&gt;
+        </code></pre>
+        <div class="exemplo">
+            <h3>Exemplo:</h3>
+            <p>Este é o primeiro parágrafo de texto na minha página HTML. É onde colocamos o conteúdo principal.</p>
+            <p>E este é o segundo parágrafo. Cada parágrafo fica em uma linha separada.</p>
+        </div>
+
+        ---
+
+        <h2>Marcação de Texto: &lt;mark&gt;, &lt;small&gt;, &lt;i&gt;, &lt;u&gt;, &lt;strong&gt;</h2>
+        <p>Essas tags servem para dar um destaque ou um significado especial a partes do seu texto.</p>
+        <ul>
+            <li><code>&lt;mark&gt;</code>: Marca um texto como se fosse com um marcatexto amarelo.</li>
+            <li><code>&lt;small&gt;</code>: Deixa o texto um pouco menor, geralmente usado para avisos legais ou letras miúdas.</li>
+            <li><code>&lt;i&gt;</code>: Deixa o texto em itálico (inclinado), bom para termos técnicos ou <em>ênfase leve</em>.</li>
+            <li><code>&lt;u&gt;</code>: Sublinha o texto. Cuidado para não confundir com links!</li>
+            <li><code>&lt;strong&gt;</code>: Torna o texto em negrito, indicando **importância forte**.</li>
+        </ul>
+        <pre><code>
+&lt;p&gt;Precisamos &lt;mark&gt;prestar atenção&lt;/mark&gt; nos detalhes.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Direitos autorais 2025. Todos os direitos reservados.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;O termo &lt;i&gt;"framework"&lt;/i&gt; é muito usado em programação.&lt;/p&gt;
+&lt;p&gt;Lembre-se de &lt;u&gt;finalizar a tarefa&lt;/u&gt; até amanhã.&lt;/p&gt;
+&lt;p&gt;Esta é uma &lt;strong&gt;informação crucial&lt;/strong&gt;!&lt;/p&gt;
+        </code></pre>
+        <div class="exemplo">
+            <h3>Exemplo:</h3>
+            <p>Precisamos <mark>prestar atenção</mark> nos detalhes.</p>
+            <p><small>Direitos autorais 2025. Todos os direitos reservados.</small></p>
+            <p>O termo <i>"framework"</i> é muito usado em programação.</p>
+            <p>Lembre-se de <u>finalizar a tarefa</u> até amanhã.</p>
+            <p>Esta é uma <strong>informação crucial</strong>!</p>
+        </div>
+
+        ---
+
+        <h2>Listas: &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</h2>
+        <p>As tags de lista são perfeitas para organizar informações em tópicos.</p>
+        <ul>
+            <li><code>&lt;ul&gt;</code>: Cria uma **lista não ordenada** (unordered list), que geralmente usa marcadores (bolinhas, quadrados).</li>
+            <li><code>&lt;ol&gt;</code>: Cria uma **lista ordenada** (ordered list), que usa números ou letras para cada item.</li>
+            <li><code>&lt;li&gt;</code>: É o **item da lista** (list item). Cada item da lista, seja ordenada ou não, fica dentro de um <code>&lt;li&gt;</code>.</li>
+        </ul>
+        <pre><code>
+&lt;h3&gt;Minha Lista de Compras (Não Ordenada)&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Maçãs&lt;/li&gt;
+    &lt;li&gt;Pão&lt;/li&gt;
+    &lt;li&gt;Leite&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Passos para o Sucesso (Ordenada)&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Definir metas claras&lt;/li&gt;
+    &lt;li&gt;Estudar bastante&lt;/li&gt;
+    &lt;li&gt;Praticar todos os dias&lt;/li&gt;
+&lt;/ol&gt;
+        </code></pre>
+        <div class="exemplo">
+            <h3>Exemplo:</h3>
+            <h3>Minha Lista de Compras (Não Ordenada)</h3>
+            <ul>
+                <li>Maçãs</li>
+                <li>Pão</li>
+                <li>Leite</li>
+            </ul>
+
+            <h3>Passos para o Sucesso (Ordenada)</h3>
+            <ol>
+                <li>Definir metas claras</li>
+                <li>Estudar bastante</li>
+                <li>Praticar todos os dias</li>
+            </ol>
+        </div>
+
+        ---
+
+        <h2>Links: &lt;a&gt;</h2>
+        <p>A tag <code>&lt;a&gt;</code> (âncora) é uma das mais importantes da web! Ela cria **links** que te levam para outras páginas, documentos ou até mesmo para outras partes da mesma página. O segredo é o atributo <code>href</code> (hypertext reference), onde você coloca o endereço para onde o link vai.</p>
+        <pre><code>
+&lt;p&gt;Visite o &lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt; para pesquisar.&lt;/p&gt;
+&lt;p&gt;Saiba mais sobre o &lt;a href="https://www.w3.org/standards/webdesign/htmlcss"&gt;HTML e CSS&lt;/a&gt; no W3C.&lt;/p&gt;
+        </code></pre>
+        <div class="exemplo">
+            <h3>Exemplo:</h3>
+            <p>Visite o <a href="https://www.google.com" target="_blank">Google</a> para pesquisar.</p>
+            <p>Saiba mais sobre o <a href="https://www.w3.org/standards/webdesign/htmlcss">HTML e CSS</a> no W3C.</p>
+        </div>
+        <p>O atributo <code>target="_blank"</code> faz o link abrir em uma nova aba do navegador.</p>
+
+        ---
+
+        <h2>Linha Horizontal: &lt;hr&gt;</h2>
+        <p>A tag <code>&lt;hr&gt;</code> (horizontal rule) cria uma **linha horizontal** na página, que serve como um divisor visual entre seções de conteúdo. É uma tag que não precisa de fechamento (chamada de "self-closing" ou "void tag").</p>
+        <pre><code>
+&lt;p&gt;Fim da primeira seção.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Início da segunda seção.&lt;/p&gt;
+        </code></pre>
+        <div class="exemplo">
+            <h3>Exemplo:</h3>
+            <p>Fim da primeira seção.</p>
+            <hr>
+            <p>Início da segunda seção.</p>
+        </div>
+
+        ---
+
+        <h2>Texto Sobrescrito e Subscrito: &lt;sub&gt;, &lt;sup&gt;</h2>
+        <p>Essas tags são usadas para exibir texto ligeiramente abaixo ou acima da linha normal de texto, como em fórmulas matemáticas ou químicas.</p>
+        <ul>
+            <li><code>&lt;sub&gt;</code>: Deixa o texto **subscrito** (abaixo).</li>
+            <li><code>&lt;sup&gt;</code>: Deixa o texto **sobrescrito** (acima).</li>
+        </ul>
+        <pre><code>
+&lt;p&gt;A fórmula da água é H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;
+&lt;p&gt;Euler demonstrou que E=mc&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+        </code></pre>
+        <div class="exemplo">
+            <h3>Exemplo:</h3>
+            <p>A fórmula da água é H<sub>2</sub>O.</p>
+            <p>Euler demonstrou que E=mc<sup>2</sup>.</p>
+        </div>
+
+        ---
+
+        <h2>Citação em Bloco: &lt;blockquote&gt;</h2>
+        <p>A tag <code>&lt;blockquote&gt;</code> é usada para representar **citações longas** de outra fonte. Geralmente, os navegadores a exibem com um recuo, para destacar que é um conteúdo citado.</p>
+        <pre><code>
+&lt;blockquote&gt;
+    &lt;p&gt;"A única maneira de fazer um ótimo trabalho é amar o que você faz."&lt;/p&gt;
+    &lt;footer&gt;-- Steve Jobs&lt;/footer&gt;
+&lt;/blockquote&gt;
+        </code></pre>
+        <div class="exemplo">
+            <h3>Exemplo:</h3>
+            <blockquote>
+                <p>"A única maneira de fazer um ótimo trabalho é amar o que você faz."</p>
+                <footer>-- Steve Jobs</footer>
+            </blockquote>
+        </div>
+
+        ---
+
+        <h2>Conclusão</h2>
+        <p>Essas são algumas das tags mais fundamentais do HTML! Cada uma tem seu propósito e, juntas, elas formam a estrutura de praticamente todas as páginas que você vê na internet. A prática é o segredo para dominar o HTML, então comece a experimentar e criar suas próprias páginas!</p>
+        <p>Lembre-se: a **indentação** (espaçamento do código, como feito nos exemplos) ajuda muito a organizar e entender o seu código, mesmo que o navegador não se importe com ela. É uma boa prática para você e para quem for ler seu código.</p>
+    </div>
+</body>
+</html>
