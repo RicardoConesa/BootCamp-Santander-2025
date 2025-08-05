@@ -1,0 +1,27 @@
+
+
+#div1 {
+    background-color: lightblue;
+    font-style: italic;
+}
+
+.divclass {
+    background-color: lightgreen;
+    color: red;
+}
+
+* {
+    font-weight: bold;
+}
+
+[title]  {
+    background-color: brown;
+    color: white;
+
+}
+
+[title="aula05"] {
+    border-style:outset ;
+    border-radius: 10px;
+    
+}
