@@ -1,0 +1,31 @@
+
+div {font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 50px;
+    margin: auto ;
+}
+
+#divid {
+    padding: 10px;
+    background-color: gray;
+    color:beige ;
+    text-transform: uppercase;
+} 
+
+button {
+    min-width: 200px;
+    max-width: auto;
+    
+    text-transform: uppercase;
+}
+
+.divclass {
+    background-color: aqua;
+}
+
+#lista02 {
+    margin-top: 30px;
+}
+
+ul{
+    margin: 30px;
+}
