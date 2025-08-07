@@ -1,0 +1,34 @@
+/* Adicionando comentários a um arquivo CSS
+   Úteis para inserir explicações que serão vistas
+   por todos os editores e para ajudar na manutenção do código */
+
+/* Utilizamos o agrupamento de seletores para aplicar o mesmo estilo
+   a mais de um elemento ao mesmo tempo.
+   Também é possível agrupar classes e IDs.
+
+   Exemplo:
+
+   hr, .nome-da-classe { ... }  ← aplica ao <hr> e à classe "nome-da-classe"
+
+   ul, #nome-do-id { ... }      ← aplica ao <ul> e ao elemento com id="nome-do-id"
+*/
+hr,  h1 {
+    background-color:yellowgreen ;
+    color: white;
+}
+
+p.texto{
+   font-family: 'Courier New', Courier, monospace;
+   color: green;
+   background-color: lightblue;
+}
+
+p.paragrafo{
+   background-color: blueviolet;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+li,li {
+    color: red;
+}
