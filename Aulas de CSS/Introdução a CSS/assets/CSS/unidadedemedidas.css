@@ -1,0 +1,27 @@
+
+nav ul {
+    
+    display: flex;
+    list-style-type: none;
+    border: solid;
+    border-color: black;
+    
+}
+
+nav ul li {
+    
+    margin: 30px;
+    text-transform: uppercase;
+    border: solid 1px black;
+    list-style: circle;
+    
+   
+}
+
+div{
+    
+    background-image:linear-gradient(rgb(24, 86, 143) , rgb(28, 100, 28));
+    color: white;
+    
+}
+

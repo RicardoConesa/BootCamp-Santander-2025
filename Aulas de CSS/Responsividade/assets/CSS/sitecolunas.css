@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif 
+}
+
+header {
+    background-color: lightsalmon;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.detalhes {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    background-color: azure;
+    border-radius: 4px;
+    padding: 25px;
+    border-style: solid;
+
+}
+
+.image-card{
+    background-color: lightsalmon;
+    gap: 20px;
+    padding: 15px;
+    flex-basis: 200px;
+    
+}
+
+.image-card img{
+    width: 100%;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+    
+}
