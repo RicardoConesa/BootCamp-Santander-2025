@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desafio de Flexbox — DIO</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-wrap">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <strong>DIO • Flexbox</strong>
+      </div>
+      <nav class="nav" aria-label="primária">
+        <a href="#sobre">Sobre</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato" class="cta">Começar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="sobre">
+      <div class="hero-grid">
+        <div class="hero-col">
+          <span class="kicker">Desafio de Flexbox</span>
+          <h1>Layout moderno com Flexbox para o desafio da DIO</h1>
+          <p class="lead">Estrutura base pronta para você conectar ao design do Figma. Semântica acessível, componentes flexíveis e tema escuro com acentos verdes.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projetos">Ver exemplos</a>
+            <a class="btn ghost" href="#recursos">Como foi feito</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric"><b>100%</b><span>Flexbox</span></div>
+            <div class="metric"><b>Semântico</b><span>HTML5 + A11y</span></div>
+            <div class="metric"><b>Responsivo</b><span>Mobile-first</span></div>
+          </div>
+        </div>
+        <div class="hero-col">
+          <div class="hero-card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Ilustração de código em editor"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container" id="recursos">
+      <div class="section-head">
+        <h2>Recursos do layout</h2>
+        <span class="tag">Edite cores em <code>:root</code></span>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">Header fixo</span>
+          <h3>Navegação clara</h3>
+          <p>Menu com CTA destacado e efeito de vidro (blur) para ficar visível sobre o conteúdo.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Hero em 2 colunas</span>
+          <h3>Texto + mídia</h3>
+          <p>Grade flexível que se adapta do mobile ao desktop com espaçamentos fluidos.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Cards modulares</span>
+          <h3>Seção de destaques</h3>
+          <p>Cards com borda sutil, sombra suave e tipografia consistente.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase container" id="projetos">
+      <div class="section-head">
+        <h2>Projetos de exemplo</h2>
+        <a href="#" class="tag">Ver todos</a>
+      </div>
+      <div class="showcase-row">
+        <article class="tile">
+          <div class="thumb">16×10</div>
+          <div class="content">
+            <strong>Landing Page</strong>
+            <p>Hero, cards e CTA em flexbox.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <div class="thumb">16×10</div>
+          <div class="content">
+            <strong>Dashboard</strong>
+            <p>Barra superior e widgets flex.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <div class="thumb">16×10</div>
+          <div class="content">
+            <strong>Seção de Cursos</strong>
+            <p>Cards responsivos com equalização de altura.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container row">
+      <span>© 2025 DIO — Desafio Flexbox (base não-oficial)</span>
+      <nav class="nav" aria-label="rodapé">
+        <a href="#">Política</a>
+        <a href="#">Termos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+.container {
+    background: cadetblue;
+    padding: 20px;
+    display: flex;
+
+}
+
+.item {
+    background: gold;
+    margin: 30px;
+
+}
+
+.colum {
+    background: green;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.columrow {
+    background: red;
+    flex-direction: row;
+    padding: 10px;
+}
