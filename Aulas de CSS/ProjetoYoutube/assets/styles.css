@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.menutop {
+    display: flex;
+    width: 1440px;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.viwer {
+    display: inline-flex;
+    margin-top: 56px;
+    flex-flow: row;
+    
+
+}
+
+.player {
+    margin: 10px;
+    width: 952px;
+    height: 746px;
+  
+
+}
+
+.listavideos{
+    margin: 10px;
+    width: 480px;
+    height: auto;
+    
+
+}
+
+.tvideo{
+ font-family: "Roboto", sans-serif;
+ font-size: 20px;
+ font-style: Bold;
+ margin-top: 0px;
+}
+
+.actionbar {
+  display: flex;              /* coloca tudo na mesma linha */
+  justify-content: space-between;    /* centraliza horizontalmente (pode trocar por flex-start ou flex-end) */
+  align-items: center;        /* alinha verticalmente */
+  gap: 10px;                  /* espaçamento entre os ícones */
+  padding: 10px;              /* opcional: espaço interno da barra */
+}
+
+.tdescricao {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+    width: 510px;
+    height: 60px;
+}
