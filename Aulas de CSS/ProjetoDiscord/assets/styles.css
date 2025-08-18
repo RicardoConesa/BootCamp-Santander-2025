@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+h1 {
+    font-family: "Luckiest Guy";
+    color: white;
+    font-size: 56px;
+    margin: 2px;
+}
+
+p {
+      font-family: "Open Sans";
+      font-style: normal;
+      
+
+}
+
+.hbranco{
+    color: white;
+}
+
+.inicio {
+    display: inline-flex;
+    align-content: center;
+    width: 70%;
+    
+}
+
+header {
+
+    width: 1fr;
+    height: 480px;
+    align-content: center;
+    text-align: center;
+    background-image: url(img/Headerimg.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+button , #bbranco {
+  background-color: #ffffff;   /* cor de fundo */
+  color: rgb(0, 0, 0);               /* cor do texto */
+  padding: 10px 20px;         /* espaço interno (altura e largura) */
+  border: none;               /* remove borda padrão */
+  border-radius: 12px;        /* arredonda os cantos */
+  cursor: pointer;            /* deixa a setinha virar mãozinha */
+  font-size: 16px;            /* tamanho da fonte */
+}
+
+button , #bpreto {
+  background-color: #000000;   /* cor de fundo */
+  color: rgb(255, 255, 255);               /* cor do texto */
+  padding: 10px 20px;         /* espaço interno (altura e largura) */
+  border: none;               /* remove borda padrão */
+  border-radius: 12px;        /* arredonda os cantos */
+  cursor: pointer;            /* deixa a setinha virar mãozinha */
+  font-size: 16px;            /* tamanho da fonte */
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* espaço entre as seções */
+}
+
+.section1, .section2, .section3 {
+  display: flex;
+  align-items: center;   /* centraliza verticalmente */
+  justify-content: center;
+  gap: 30px;             /* espaço entre imagem e texto */
+  flex-wrap: wrap;       /* permite quebrar em telas pequenas */
+}
+
+/* ordem padrão */
+.section1 {
+  flex-direction: row;
+}
+.section2 {
+  flex-direction: row-reverse;
+}
+.section3 {
+  flex-direction: row;
+}
+
+/* imagens responsivas */
+.section1 img, 
+.section2 img, 
+.section3 img {
+  width: 100%;
+  max-width: 400px;  /* limita em telas grandes */
+  height: auto;
+  border-radius: 12px;
+}
+
+/* textos responsivos */
+.txt1, .txt2, .txt3 {
+  flex: 1;                /* ocupa o espaço disponível */
+  min-width: 250px;       /* não fica apertado demais */
+  max-width: 600px;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+/* Mobile: empilha imagem e texto */
+@media (max-width: 768px) {
+  .section1, .section2, .section3 {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .txt1, .txt2, .txt3 {
+    max-width: 90%;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center; /* alinha no centro horizontal */
+  align-items: center;     /* alinha no centro vertical */
+  padding: 20px;           /* espaço interno */
+  background-color: #23272a; /* cor de fundo opcional */
+}
+
+footer img {
+  max-width: 150px; /* tamanho máximo da logo */
+  height: auto;
